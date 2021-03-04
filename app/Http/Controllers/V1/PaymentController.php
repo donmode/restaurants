@@ -74,7 +74,7 @@ class PaymentController extends Controller
             'response'=>'required'
         ]);
 
-        $paystack = new Paystack('sk_test_059143f130d73277b8d5c09b1e528648be9a5a27');
+        $paystack = new Paystack(env("PAYSTACK_SECRET_KEY",'sk_test_059143f130d73277b8d5c09b1e528648be9a5a27'));
         $trx = $paystack->transaction->verify(
             [
             'reference'=>$data['response']['reference']
