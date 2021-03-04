@@ -20,3 +20,5 @@ iii.) Set up your Gmail Smtp Credentials
 3.) Create a database migration, this will migrate all the necesary tables to the already created Database
 
 You can use Database Seed to generate Pseudo-data if need in the CLI
+
+Here is a link tho the project's postman documentation: https://www.getpostman.com/collections/e76530f8af63888a67be
